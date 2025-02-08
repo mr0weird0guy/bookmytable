@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Booking</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      #tableDetails {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      #tableDetails th {
+        background-color: #f2f2f2;
+        color: black;
+      }
+      #tableDetails th,
+      #tableDetails td {
+        padding: 8px;
+        text-align: center;
+      }
+      #tableDetails tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      #tableDetails tr:hover {
+        background-color: grey;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" id="tableDetails">
+      <tr>
+        <th>Sl. No</th>
+        <th>Date</th>
+        <th>Table No.</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Duration</th>
+        <th>Booking ID</th>
+        <th>Client Name</th>
+        <th>Phone No.</th>
+        <th>Delete</th>
+      </tr>
+      <tbody id="bookingTableBody"></tbody>
+    </table>
+  </body>
+  <script type="module" src="tabledetailsandbookingdetails.js"></script>
+</html>

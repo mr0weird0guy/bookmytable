@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book My Table</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="floor">
+      <div class="table table-1" onclick="addTable(1)">1</div>
+      <div class="table table-2" onclick="addTable(2)">2</div>
+      <div class="table table-3" onclick="addTable(3)">3</div>
+      <div class="table table-4" onclick="addTable(4)">4</div>
+    </div>
+
+    <div class="popup-form">
+      <div class="details">
+        <div class="conf-table"></div>
+        <div class="conf-date"></div>
+        <div class="conf-time"></div>
+      </div>
+      <div class="date format">
+        <input type="date" name="date" />
+        <button onclick="openDuration()">Next</button>
+      </div>
+      <div class="duration hidden">
+        <label for="30mins">
+          <input type="radio" name="duration" id="30mins" value="30" />
+          30 mins
+        </label>
+        <label for="60mins">
+          <input type="radio" name="duration" id="60mins" value="60" />
+          60 mins
+        </label>
+        <div style="display: flex">
+          <button onclick="backToDate()">Back</button>
+          <button onclick="openTimings()">Next</button>
+        </div>
+      </div>
+      <div class="timings hidden">
+        <label for="time"> Select Time: </label>
+        <input type="time" name="time" id="time" />
+        <div style="display: flex">
+          <button onclick="backToDuration()">Back</button>
+          <button onclick="openUser()">Next</button>
+        </div>
+      </div>
+      <div class="user hidden">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="phone" placeholder="Phone" />
+        <button onclick="backToTimings()">Back</button>
+        <button onclick="confirmBooking()">Next</button>
+      </div>
+      <div class="result"></div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

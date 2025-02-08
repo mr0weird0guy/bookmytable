@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: lightgray;
+  justify-content: space-between;
+}
+
+.floor {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table {
+  color: white;
+  background: grey;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.table-1 {
+  width: 17vw;
+  height: 60vh;
+  bottom: 10vh;
+  left: 10vh;
+}
+
+.table-2 {
+  height: 17vw;
+  width: 60vh;
+  bottom: 10vh;
+  left: calc(10vh + 17vw + 20vh);
+}
+
+.table-3 {
+  height: 10vw;
+  width: 30vh;
+  top: 10vh;
+  right: calc(13vh + 17vw + 13vh);
+}
+
+.table-4 {
+  width: 12vw;
+  height: 30vh;
+  top: 10vh;
+  right: 10vh;
+}
+
+.popup-form {
+  width: 20%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.format {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.format button {
+  width: 80%;
+  height: 30px;
+  margin: 5px;
+}
+
+.result {
+  text-align: center;
+}
