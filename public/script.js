@@ -1,3 +1,8 @@
+if (window.innerWidth < window.innerHeight || window.innerWidth < 581) {
+  document.querySelector("body").innerHTML =
+    "Please open this page on a full page desktop browser";
+}
+
 var tableNo;
 
 const confTable = document.querySelector(".conf-table");
